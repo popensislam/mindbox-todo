@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "types": ["vitest/globals"],
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Alias */
+    "baseUrl": ".",
+    "paths": {
+      "app/*": ["src/[0]app/*"],
+      "pages/*": ["src/[1]pages/*"],
+      "widgets/*": ["src/[2]widgets/*"],
+      "features/*": ["src/[3]features/*"],
+      "entities/*": ["src/[4]entities/*"],
+      "shared/*": ["src/[5]shared/*"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
